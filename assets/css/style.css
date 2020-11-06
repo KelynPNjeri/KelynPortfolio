@@ -10,7 +10,12 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: #0a192f;
+  color: #8892b0;
+  min-height: 100vh;
+}
+
+.body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,41 +29,60 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
+  margin: 0 auto;
 }
 
 .main {
-  text-align: center;
-  width: 90%;
-  opacity: 0;
   display: none;
   -webkit-transition: opacity 1s ease-in;
   transition: opacity 1s ease-in;
 }
 
-.main h1 {
-  font-size: 50px;
-  margin-bottom: 10px;
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
 }
 
-.main p {
-  font-size: 25px;
-  color: #333;
+.navbar .brand {
+  font-size: 18px;
 }
 
-.btn {
-  display: inline-block;
-  background: purple;
-  color: #fff;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin-top: 15px;
+.navlinks {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  font-size: 16px;
 }
 
-.btn:hover {
-  opacity: 0.9;
+.navlinks li {
+  padding: 0 15px;
+}
+
+.color-neon {
+  color: #64ffda;
+}
+
+#brief-description {
+  padding: 0 150px;
+}
+
+#brief-description h1 {
+  font-size: 16px;
+  font-family: 'Fira Code';
 }
 
 /* LOADER 1 */
@@ -72,7 +96,7 @@ body {
 
 .circle {
   display: inline-block;
-  background-color: purple;
+  background-color: #64ffda;
   height: 40px;
   width: 40px;
   border-radius: 50%;

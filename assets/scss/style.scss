@@ -41,10 +41,19 @@ body {
   justify-content: space-between;
   padding: 20px;
   .brand {
-    font-size: 18px;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 }
-
+.btn {
+  text-decoration: none;
+  color: $neon-green;
+  padding: 10px 20px;
+  border: 1px solid $neon-green;
+  border-radius: 5px;
+}
 .navlinks {
   list-style: none;
   display: flex;
@@ -66,8 +75,9 @@ body {
   grid-template-columns: .1fr 3fr .1fr;
 }
 #brief-description {
-  // padding: 0 150px;
-  width: 60%;
+  padding: 20px 50px;
+  width: 80%;
+  height: fit-content;
   line-height: 1.6;
   h1 {
     font-size: 16px;
@@ -76,6 +86,14 @@ body {
   h2, h3 {
     font-size: 60px;
     font-family: 'Roboto', sans-serif;
+  }
+  p {
+    margin-bottom: 30px;
+    width: 50%;
+  }
+
+  .info {
+    margin: 20px 0;
   }
 
 }
@@ -92,14 +110,24 @@ body {
   width: 1px;
   height: 90px;
   margin: 0 auto;
+  font-size: 20px;
+  letter-spacing: 2px;
   color: $lighter-text-color;
 }
 .fab {
   font-size: 32px;
   padding: 10px 5px;
 }
+.fab:hover {
+  color: $lighter-text-color;
+  transition: ease-in-out 1s;
+}
 .icons {
-  margin-bottom: -160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 10px;
+  min-height: 75vh;
 }
 /* LOADER 1 */
 .loader {

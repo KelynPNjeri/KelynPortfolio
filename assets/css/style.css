@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|ZCOOL+KuaiLe&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -76,13 +77,58 @@ body {
   color: #64ffda;
 }
 
+.light {
+  color: #e6f1ff;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .1fr 3fr .1fr;
+      grid-template-columns: .1fr 3fr .1fr;
+}
+
 #brief-description {
-  padding: 0 150px;
+  width: 60%;
+  line-height: 1.6;
 }
 
 #brief-description h1 {
   font-size: 16px;
   font-family: 'Fira Code';
+}
+
+#brief-description h2, #brief-description h3 {
+  font-size: 60px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#email {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-decoration: none;
+  color: #8892b0;
+  position: fixed;
+  bottom: 80px;
+}
+
+#email::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0 auto;
+  color: #e6f1ff;
+}
+
+.fab {
+  font-size: 32px;
+  padding: 10px 5px;
+}
+
+.icons {
+  margin-bottom: -160px;
 }
 
 /* LOADER 1 */

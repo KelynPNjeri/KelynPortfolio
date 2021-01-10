@@ -77,12 +77,12 @@ body {
 .grid {
   display: grid;
   grid-template-columns: .1fr 3fr .1fr;
+  height: 100vh;
 }
 
 #brief-description {
   padding: 20px 50px;
   width: 80%;
-  height: fit-content;
   line-height: 1.6;
 }
 
@@ -99,6 +99,7 @@ body {
 #brief-description p {
   margin-bottom: 30px;
   width: 50%;
+  padding: 25px 0;
 }
 
 #brief-description .info {
@@ -134,14 +135,6 @@ body {
   transition: ease-in-out 1s;
 }
 
-.icons {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 0 10px;
-  min-height: 75vh;
-}
-
 /* LOADER 1 */
 .loader {
   height: 50px;
@@ -175,5 +168,30 @@ body {
   50% {
     transform: scale(1);
   }
+}
+
+#about {
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+#about .about {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 45px;
+  text-decoration: underline;
+}
+
+#about .about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#about .about-content .profile {
+  font-size: 18px;
+  line-height: 1.9;
 }
 /*# sourceMappingURL=style.css.map */

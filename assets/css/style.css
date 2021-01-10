@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|ZCOOL+KuaiLe&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -17,47 +16,28 @@ body {
 }
 
 .body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin: 0 auto;
 }
 
 .main {
   display: none;
-  -webkit-transition: opacity 1s ease-in;
   transition: opacity 1s ease-in;
 }
 
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   padding: 20px;
 }
 
 .navbar .brand {
-  font-size: 24px;
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  text-transform: uppercase;
+  width: 60px;
+  margin-top: -15px;
 }
 
 .btn {
@@ -70,18 +50,20 @@ body {
 
 .navlinks {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  font-size: 16px;
+  flex-flow: row nowrap;
+  font-size: 14px;
 }
 
 .navlinks li {
   padding: 0 15px;
+  letter-spacing: 1px;
+}
+
+.navlinks li:hover {
+  color: #64ffda;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .color-neon {
@@ -93,17 +75,13 @@ body {
 }
 
 .grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: .1fr 3fr .1fr;
-      grid-template-columns: .1fr 3fr .1fr;
+  grid-template-columns: .1fr 3fr .1fr;
 }
 
 #brief-description {
   padding: 20px 50px;
   width: 80%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   line-height: 1.6;
 }
@@ -128,9 +106,7 @@ body {
 }
 
 #email {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   text-decoration: none;
   color: #8892b0;
   position: fixed;
@@ -149,27 +125,19 @@ body {
 }
 
 .fab {
-  font-size: 32px;
+  font-size: 20px;
   padding: 10px 5px;
 }
 
 .fab:hover {
   color: #e6f1ff;
-  -webkit-transition: ease-in-out 1s;
   transition: ease-in-out 1s;
 }
 
 .icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
   padding: 0 10px;
   min-height: 75vh;
 }
@@ -177,10 +145,8 @@ body {
 /* LOADER 1 */
 .loader {
   height: 50px;
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
-  -webkit-animation: rotate 3s linear infinite;
-          animation: rotate 3s linear infinite;
+  transform-origin: bottom center;
+  animation: rotate 3s linear infinite;
 }
 
 .circle {
@@ -189,44 +155,25 @@ body {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-animation: grow 1.5s linear infinite;
-          animation: grow 1.5s linear infinite;
+  transform: scale(0);
+  animation: grow 1.5s linear infinite;
   margin: -10px;
 }
 
 .circle:nth-child(2) {
   background-color: palevioletred;
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
-}
-
-@-webkit-keyframes rotate {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+  animation-delay: 0.75s;
 }
 
 @keyframes rotate {
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes grow {
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes grow {
   50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 /*# sourceMappingURL=style.css.map */

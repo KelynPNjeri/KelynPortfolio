@@ -41,10 +41,8 @@ body {
   justify-content: space-between;
   padding: 20px;
   .brand {
-    font-size: 24px;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    text-transform: uppercase;
+    width: 60px;
+    margin-top: -15px;
   }
 }
 .btn {
@@ -58,9 +56,15 @@ body {
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  font-size: 16px;
+  font-size: 14px;
   li {
     padding: 0 15px;
+    letter-spacing: 1px;
+  }
+  li:hover {
+    color: $neon-green;
+    text-decoration: underline;
+    cursor: pointer;
   }
 }
 
@@ -115,7 +119,7 @@ body {
   color: $lighter-text-color;
 }
 .fab {
-  font-size: 32px;
+  font-size: 20px;
   padding: 10px 5px;
 }
 .fab:hover {

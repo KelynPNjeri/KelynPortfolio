@@ -32,7 +32,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  padding: 20px;
+  padding: 40px;
 }
 
 .navbar .brand {
@@ -180,7 +180,7 @@ body {
 #about .about {
   font-size: 24px;
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   text-decoration: underline;
 }
 
@@ -192,6 +192,6 @@ body {
 
 #about .about-content .profile {
   font-size: 18px;
-  line-height: 1.9;
+  line-height: 1.8;
 }
 /*# sourceMappingURL=style.css.map */
